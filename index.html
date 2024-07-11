@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Myself</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+       
+    }
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        color: #ffff;
+        background: rgb(4, 7, 46);
+    }
+    .main-content{
+        max-width: 1200px;
+        margin: 0rem auto;
+        padding: 2rem;
+    }
+    .content{
+        font-size: 1.5rem;
+        color: #ffff;
+        background: rgb(4, 7, 46);
+        padding: 3rem;
+        border-radius: 20px;
+    }
+    h1{
+        text-align:center;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+       
+    }
+    .content img{
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .img-text img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content > div{
+        flex-basis: 50%;
+    }
+    .img-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    }
+    .img-brand{
+        margin-right: 1rem;
+    }
+    p{
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+    .content-border{
+        padding: 1rem;
+        border-radius: 20px;
+        border: gray 1px dotted;
+    }
+    h3 , h4{
+        margin-bottom: 1rem;
+    }
+
+
+    /* gellary */
+.gellary-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    /* media query */
+    @media (max-width: 575.98px) { 
+
+        .main-content {
+    margin-top: 10px;
+    padding: 10px;
+}
+h1{
+        text-align:center;
+        font-size: 2rem;
+     }
+  .content > div{
+        flex-basis: 90%;
+    }
+    .content{
+        justify-content: center;
+        padding: 1rem;
+ }
+ .content img{
+        height: 250px;
+        width: 250px;
+         }
+         .img-text img{
+        height: 80px;
+        width: 80px;
+     }
+  p{
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+    .content > div{
+        flex-basis: 90%;
+    }
+     }
+     
+@media (max-width: 767.98px) {  
+    .main-content {
+    margin-top: 10px;
+    padding: 10px;
+}
+h1{
+        text-align:center;
+        font-size: 2rem; }
+ .content img{
+        height: 250px;
+        width: 250px;
+         }
+         .img-text img{
+        height: 80px;
+        width: 80px;
+     }
+  p{
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .content > div{
+        flex-basis: 90%;
+    }
+ }
+</style>
+<body>
+    <div class="main-content">
+        <h1>Introduction Blog</h1>
+        <div class="content">
+                   <div class="first-content">
+                    <h3>What's up everyone, <b style="color: yellow;">Sifat here!</b> </h3>
+                        <br>
+                    <img src="./image/myself.jpg" alt="" srcset="">
+                   </div>
+                    <div class="text-content content-border">
+                        <h4> <b style="color: yellow;">About me</b> ?</h4>
+                        <p>  I'm a computer technology student at Brahmanbaria Polytechnic Institute.  Always looking to expand my skillset, I recently enrolled at Shikhbesobai to become a full-stack web developer!</p>
+                        <br>
+                        <h4> <b style="color: yellow;">Why web Dev</b> ?</h4>
+                        <p> The world of web development is booming! It offers high-paying careers and the chance to launch your own online business.  The potential to create and earn – that's what drew me in!</p>
+                        <br>
+                       
+                        <h4> <b style="color: yellow;">Why Shikhbe Sobai</b> ?</h4>
+                        <div class="img-text">
+                            <img src="./image/ss.png" alt="" class="img-brand" srcset="">
+                          
+                            <p> To become a top-notch developer, I chose Shikhbesobai. They have the most experienced mentors, and their learning environment is amazing – focused and supportive, perfect for mastering this craft.</p>
+                        </div>
+                        <br>
+                        <br>
+                        <h4> <b style="color: yellow;">About My Mentor </b> ? ? ?</h4>
+                        <div class="img-text">
+                            <img src="./image/farid vai.png" class="img-brand" alt="" srcset="">
+                           
+                            <p> He is a E-commerce guru! he is expert in this field & working on this industries over a decade! very good & charming behaviour</p>
+                        </div>
+                      
+                    </div>
+              
+                   
+                </div>
+    </div>
+
+    <!-- main  gellary section -->
+     <section class="gellary-content">
+        <div class="column">
+            <img src="./image/alaka.jpg" alt="" srcset="">
+        </div>
+        <img src="./image/campus celling.jpg" alt="" srcset="">
+        <img src="./image/campus.jpg" alt="" srcset="">
+        <img src="./image/eating.jpg" alt="" srcset="">
+        <img src="./image/elevator.jpg" alt="" srcset="">
+        <img src="./image/myself.jpg" alt="" srcset="">
+        <img src="./image/sahidminar.jpg" alt="" srcset="">
+        <img src="./image/satshori.jpg" alt="" srcset="">
+     </section>
+</body>
+</html>
