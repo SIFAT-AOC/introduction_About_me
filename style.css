@@ -1,0 +1,150 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color: #ffff;
+    background: rgb(4, 7, 46);
+}
+.main-content{
+    max-width: 1200px;
+    margin: 0rem auto;
+    padding: 2rem;
+}
+.content{
+    font-size: 1.5rem;
+    color: #ffff;
+    background: rgb(4, 7, 46);
+    padding: 3rem;
+    border-radius: 20px;
+}
+h1{
+    text-align:center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+   
+}
+.content img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.img-text img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.content > div{
+    flex-basis: 50%;
+}
+.img-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+}
+.img-brand{
+    margin-right: 1rem;
+}
+p{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.content-border{
+    padding: 1rem;
+    border-radius: 20px;
+    border: gray 1px dotted;
+}
+h3 , h4{
+    margin-bottom: 1rem;
+}
+
+
+/* gellary */
+.gellary-content{
+display: flex;
+flex-wrap: wrap;
+}
+
+/* media query */
+@media (max-width: 575.98px) { 
+
+    .main-content {
+margin-top: 10px;
+padding: 10px;
+}
+h1{
+    text-align:center;
+    font-size: 2rem;
+ }
+.content > div{
+    flex-basis: 90%;
+}
+.content{
+    justify-content: center;
+    padding: 1rem;
+}
+.content img{
+    height: 250px;
+    width: 250px;
+     }
+     .img-text img{
+    height: 80px;
+    width: 80px;
+ }
+p{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.content > div{
+    flex-basis: 90%;
+}
+ }
+ 
+@media (max-width: 767.98px) {  
+.main-content {
+margin-top: 10px;
+padding: 10px;
+}
+h1{
+    text-align:center;
+    font-size: 2rem; }
+.content img{
+    height: 250px;
+    width: 250px;
+     }
+     .img-text img{
+    height: 80px;
+    width: 80px;
+ }
+p{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+}
+}
+
+@media (max-width: 991.98px) {
+.content > div{
+    flex-basis: 90%;
+}
+}
