@@ -7,7 +7,7 @@
 }
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    scroll-behavior: smooth;    
     color: #ffff;
     background: rgb(4, 7, 46);
 }
@@ -100,7 +100,7 @@ h3 , h4{
     aspect-ratio: 3/4;
     object-fit: cover;
     filter: grayscale(100%);
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 .column img:hover{
     filter: grayscale(0);
@@ -186,5 +186,5 @@ p{
         padding: 1.5rem;
      }
 
-
+ 
     }
