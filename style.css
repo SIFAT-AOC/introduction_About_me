@@ -1,190 +1,249 @@
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-   
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    scroll-behavior: smooth;    
-    color: #ffff;
-    background: rgb(4, 7, 46);
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  scroll-behavior: smooth;
+  color: #fff;
+  background: rgb(4, 7, 46);
 }
-.main-content{
-    max-width: 1200px;
-    margin: 0rem auto;
-    padding: 2rem;
+.page_width {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-.content{
-    font-size: 1.5rem;
-    color: #ffff;
-    background: rgb(4, 7, 46);
-    padding: 3rem;
-    border-radius: 20px;
+.logo {
+  flex-basis: 20%;
 }
-h1{
-    text-align:center;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-   
+nav {
+  flex-basis: 80%;
 }
-.content img{
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    border-radius: 50%;
+h2 {
+  font-size: 38px;
 }
-.img-text img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.page_width .logo img {
+  width: 200px;
 }
-.content > div{
-    flex-basis: 50%;
+header {
+  border-bottom: #b3a3a32b solid 1px;
+  padding: 10px 0;
 }
-.img-text{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flex-end {
+  justify-content: flex-end;
 }
-.first-content{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-end;
+.align-item-center {
+  align-items: center;
 }
-.img-brand{
-    margin-right: 1rem;
-}
-p{
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: normal;
-}
-.content-border{
-    padding: 1rem;
-    border-radius: 20px;
-    border: gray 1px dotted;
-}
-h3 , h4{
-    margin-bottom: 1rem;
+nav ul {
+  list-style: none;
 }
 
+nav ul li a {
+  display: block;
+  margin: 0 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #04072e;
+}
+.main-content {
+  max-width: 1200px;
+  margin: 0rem auto;
+  padding: 2rem;
+}
+.content {
+  font-size: 1.5rem;
+  color: #ffff;
+  background: rgb(4, 7, 46);
+  padding: 3rem;
+  border-radius: 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.content img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.img-text img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.content > div {
+  flex-basis: 50%;
+}
+.img-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.img-brand {
+  margin-right: 1rem;
+}
+p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.content-border {
+  padding: 1rem;
+  border-radius: 20px;
+  border: gray 1px dotted;
+}
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
 
 /* gellary */
-.gellary-content{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
-    margin: 0 auto;
-    gap: 0.6rem;
-    max-width: 1200px;
+.gellary-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 0 auto;
+  gap: 0.6rem;
+  max-width: 1200px;
 }
-.gellary-content .column{
-    flex-basis: 23.30%;
-    max-width: 23.30%;
-    border-radius: 2%;
-    padding: 0.5rem;
-    background-color: rgb(166 172 194 / 18%);
+.gellary-content .column {
+  flex: 1 1 auto;
+  max-width: 23.3%;
+  border-radius: 2%;
+  padding: 0.5rem;
+  background-color: rgb(166 172 194 / 18%);
 }
 
-.column img{
-    width: 100%;
-    aspect-ratio: 3/4;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: all 0.3s ease;
+.column img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: all 0.3s ease;
 }
-.column img:hover{
-    filter: grayscale(0);
+.column img:hover {
+  filter: brightness(1);
 }
 
 /* media query */
-@media (max-width: 576px) { 
-
-    .main-content {
-margin-top: 10px;
-padding: 10px;
-}
-h1{
-    text-align:center;
+@media (max-width: 576px) {
+  .main-content {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  h1 {
+    text-align: center;
     font-size: 2rem;
- }
-.content > div{
+  }
+  .content > div {
     flex-basis: 90%;
-}
-.content{
+  }
+  .content {
     justify-content: center;
     padding: 1rem;
-}
-.content img{
+  }
+  .content img {
     height: 250px;
     width: 250px;
-     }
-     .img-text img{
+  }
+  .img-text img {
     height: 80px;
     width: 80px;
- }
-p{
+  }
+  p {
     font-size: 12px;
     line-height: 20px;
     font-weight: normal;
-}
-.content > div{
+  }
+  .content > div {
     flex-basis: 90%;
-}
-.gellary-content{
+  }
+  .gellary-content {
     padding: 0.9rem;
- }
- .gellary-content > .column {
+  }
+  .gellary-content > .column {
     flex-basis: 48.3%;
     max-width: 48.3%;
+  }
 }
 
- }
- 
-@media (max-width: 767.98px) {  
-.main-content {
-margin-top: 10px;
-padding: 10px;
-}
-h1{
-    text-align:center;
-    font-size: 2rem; }
-.content img{
+@media (max-width: 767.98px) {
+  .main-content {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .content img {
     height: 250px;
     width: 250px;
-     }
-     .img-text img{
+    margin: 15px;
+  }
+  .img-text img {
     height: 80px;
     width: 80px;
- }
-p{
+  }
+  p {
     font-size: 12px;
     line-height: 20px;
     font-weight: normal;
-}
+  }
 
-.gellary-content > .column {
+  .gellary-content > .column {
     flex-basis: 48.3%;
     min-width: 48.3%;
-}
+  }
 }
 
 @media (max-width: 991.98px) {
-    .content > div{
-        flex-basis: 90%;
-    }
-    .gellary-content{
-        padding: 1.5rem;
-     }
-
- 
-    }
+  .content > div {
+    flex-basis: 90%;
+  }
+  .gellary-content {
+    padding: 1.5rem;
+  }
+  .logo{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav{
+    flex-basis: 100%;
+  }
+  .flex-end{
+    justify-content: center;
+    gap: 10px;
+  }
+}
